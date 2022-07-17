@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'fontdorid';
+    src: url(fontes/idroid.otf) format(otf);
+}
+body{
+    background-color: rgba(143, 219, 172, 0.61);
+}
+header{
+    padding: 20px;
+    background-color: rgb(47, 112, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header > p {
+    text-align: center;
+}
+nav > a {
+    font-size: bold;
+    margin-left: 30px;
+}
+main{
+    margin: auto 100px auto 100px;
+    background-color: white;
+    
+    
+}
+h1{
+    font-family: 'fontdroid';
+    color: white;
+    text-align: center;
+}
+/* h2{
+    font-family: 'androidlang';
+    font-size: 20px;
+} */
+h2{
+    font-family: 'fontdroid';
+    background-color: rgba(94, 165, 121, 0.952);
+
+}
