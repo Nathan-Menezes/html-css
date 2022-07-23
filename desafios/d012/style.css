@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+
+header {
+    color: white;
+    background-color: black;
+    padding: 60px;
+    margin: -10px;
+    text-align: center;
+    
+}
+body {
+    background-color: aliceblue;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+section#p01 {
+    text-align: left;
+    padding: 60px 0px 60px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+section#p02 {
+    text-align: left;
+    padding: 60px 0px 60px 0px;
+    font-size: 2em;
+    background-image: url('imagens/background001.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: white;
+    
+}
+
