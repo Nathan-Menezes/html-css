@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de E-Commerce</title>
+    <style>
+        /* Estilos gerais */
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+  
+        body {
+          font-family: Arial, sans-serif;
+        }
+  
+        /* Cabeçalho */
+        header {
+          background-color: #333;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+        }
+  
+        header h1 {
+          margin: 0;
+        }
+  
+        header nav ul {
+          display: flex;
+          list-style: none;
+        }
+  
+        header nav a {
+          color: #fff;
+          display: block;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+        }
+  
+        /* Seção de Produtos */
+        section#produtos {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 1rem;
+        }
+  
+        .produto {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          display: flex;
+          flex-direction: column;
+          margin: 1rem;
+          min-width: 200px;
+          text-align: center;
+        }
+  
+        .produto img {
+          height: 200px;
+          width: 200px;
+        }
+  
+        .produto button {
+          background-color: #333;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+        }
+  
+        /* Seção de Sobre */
+        section#sobre {
+          padding: 1rem;
+          text-align: center;
+        }
+  
+        /* Seção de Contato */
+        section#contato {
+          padding: 1rem;
+          text-align: center;
+        }
+  
+        section#contato form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        section#contato label,
+        section#contato input,
+        section#contato textarea {
+          width: 100%;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+        }
+  
+        /* Rodapé */
+        footer {
+          background-color: #333;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 1rem;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Confira nossa seleção de produtos:</p>
+        <ul>
+          <li>
+            <h3>Produto 1</h3>
+            <img src="produto1.jpg" alt="Imagem do Produto 1">
+            <p>Descrição do Produto 1</p>
+            <p>Preço: R$XX,XX</p>
+            <button>Adicionar ao Carrinho</button>
+          </li>
+          <li>
+            <h3>Produto 2</h3>
+            <img src="produto2.jpg" alt="Imagem do Produto 2">
+            <p>Descrição do Produto 2</p>
+            <p>Preço: R$XX,XX</p>
+            <button>Adicionar ao Carrinho</button>
+          </li>
+        </ul>
+      </section>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre a empresa e sua missão</p>
+      </section>
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="submit-form.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados © 20XX</p>
+    </footer>
+  </body>
+</html>
